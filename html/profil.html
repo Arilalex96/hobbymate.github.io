@@ -132,6 +132,43 @@
             margin-bottom: 20px;
             padding-bottom: 50px;
         }
+		
+	@media only screen and (max-width: 768px) {
+	.menu-bar ul {
+		flex-direction: column;
+	}
+	.menu-bar ul li {
+		width: 100%;
+		text-align: center;
+	}
+	.menu-bar ul li a {
+		font-size: 18px;
+		padding: 10px 0;
+	}
+	.fas {
+		float: none;
+		display: block;
+		margin: 0 auto;
+		padding-top: 5px;
+	}
+	.dropdown-menu {
+		position: static;
+		display: none;
+		margin-top: 5px;
+	}
+	.dropdown-menu ul {
+		margin: 0;
+	}
+	.dropdown-menu ul li {
+		width: 100%;
+		padding: 5px 0;
+		border-bottom: none;
+	}
+	.dropdown-menu ul li a {
+		font-size: 16px;
+		padding: 5px 20px;
+	}
+     }
         
         h1 {
             text-align: center;
