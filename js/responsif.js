@@ -1,5 +1,5 @@
 var tombolMenu = $(".tombol-menu");
-var menu = $(".menu-bar ul");
+var menu = $("nav .menu-bar ul");
 
 function klikMenu(){
    tombolMenu.click(function(){
