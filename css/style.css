@@ -250,7 +250,6 @@ img {
   text-align: center;
 }
 
-
 .dot {
   cursor: pointer;
   height: 15px;
@@ -289,7 +288,6 @@ img {
 	from {transform: translateX(-100%);}
 	to {transform: translateX(0);}
   }
-  
 
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
@@ -325,7 +323,6 @@ img {
 	justify-content: center;
 	height: 50px;
 }
-
 
 iframe {
 	max-width: 50%;
