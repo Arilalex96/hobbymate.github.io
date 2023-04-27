@@ -156,6 +156,14 @@ header {
 	  height: auto;
 	  padding: 15px;
 	}
+	.menu-bar ul {
+		display: none;
+		margin-top: 60px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
 	.menu-bar h1 {
 	  font-size: 24px;
 	}
@@ -166,9 +174,6 @@ header {
 		padding: 1px;
 	}
 	
-	.menu-bar ul {
-	  flex-direction: column;
-	}
 	.menu-bar ul li {
 	  padding: 10px 0;
 	  position: relative;
