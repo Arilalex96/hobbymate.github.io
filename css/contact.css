@@ -47,8 +47,6 @@
 }
 
 .fas {
-	float: right;
-	margin-left: 10px;
 	padding-top: 1px;
 }
 
@@ -124,41 +122,50 @@ header {
 }
 
 @media only screen and (max-width: 768px) {
+	.menu-bar {
+	  display: block;
+	  height: auto;
+	  padding: 15px;
+	}
+	.menu-bar h1 {
+	  font-size: 24px;
+	}
+
+	.menu-bar .fas {
+		padding: 1px;
+	}
+	.tombol-menu {
+		display: flex;
+	}
 	.menu-bar ul {
-		flex-direction: column;
+	  flex-direction: column;
 	}
 	.menu-bar ul li {
-		width: 100%;
-		text-align: center;
+	  padding: 10px 0;
+	  position: relative;
 	}
 	.menu-bar ul li a {
-		font-size: 18px;
-		padding: 10px 0;
+	  font-size: 18px;
 	}
-	.fas {
-		float: none;
-		display: block;
-		margin: 0 auto;
-		padding-top: 5px;
+	.menu-bar ul li:hover .dropdown-menu {
+	  display: block;
+	  position: static;
+	  background-color: #FFD93D;
 	}
 	.dropdown-menu {
-		position: static;
-		display: none;
-		margin-top: 5px;
+	  display: none;
 	}
-	.dropdown-menu ul {
-		margin: 0;
+	.dropdown-menu-1,
+	.dropdown-menu-2 {
+	  display: none;
 	}
-	.dropdown-menu ul li {
-		width: 100%;
-		padding: 5px 0;
-		border-bottom: none;
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+	.menu-bar {
+		display: block;
 	}
-	.dropdown-menu ul li a {
-		font-size: 16px;
-		padding: 5px 20px;
-	}
-}
+  }
 
 body {
 	font-family: sans-serif;
