@@ -12,8 +12,9 @@ function klikMenu(){
 
 $(document).ready(function() {
    var width = $(window).width();
-   if(width < 990) {
+   if(width < 991) {
       klikMenu();
+      }
 })
 
 $(window).resize(function(){
