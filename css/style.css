@@ -300,6 +300,7 @@ img {
  height: 10px;
   width: 10px;
 }
+}
 @media only screen and (max-width: 500px) {
   .prev, .next,.text {font-size: 14px}
 }
@@ -332,3 +333,4 @@ img {
 iframe {
 	max-width: 50%;
 }
+
