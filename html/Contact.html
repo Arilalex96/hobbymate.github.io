@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kontak Kami</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+	<link rel="stylesheet" href="../css/contact.css" />
+</head>
+<body>
+	<div class="menu-bar">
+		<h1 class="logo">Hobby<span>Mate</span></h1>
+		<ul>
+		  <li><a href="../index.html">Beranda</a></li>
+		  <li><a href="./kategori.html">Kategori <i class="fas fa-caret-down"></i></a>
+			  <div class="dropdown-menu">
+				  <ul>
+					<li>
+					  <a href="./buttom.html">Olahraga <i class="fas fa-caret-right"></i></a>
+					  <div class="dropdown-menu-1">
+						<ul>
+						  <li><a href="buttom.html">Bulutangkis</a></li>
+						  <li><a href="buttom.html">Basket</a></li>
+						  <li><a href="buttom.html">Futsal</a></li>
+						  <li><a href="buttom.html">Volly</a></li>
+						  <li><a href="buttom.html">Bersepeda</a></li>
+						</ul>
+					  </div>
+					</li>
+					<li>
+					  <a href="./buttom.html">Kesenian <i class="fas fa-caret-right"></i></a>
+					  <div class="dropdown-menu-2">
+						<ul>
+						  <li><a href="buttom.html">Menyanyi</a></li>
+						  <li><a href="buttom.html">Dance</a></li>
+						  <li><a href="buttom.html">Teater</a></li>
+						</ul>
+					  </div>
+					</li>
+				  </ul>
+			  </div>
+		  </li>
+		  <li><a href="./tentang.html">Tentang</a>
+		  </li>
+		  <li><a href="./tentang.html">Kontak Kami</a></li>
+		  <li><a href="./profil.html">Profil</a></li>
+		  <li><i class="fas fa-user" id="login-btn"></i>
+		  </li>
+		  </div>
+		</ul>
+	  </div>
+
+	<div class="contact-us">
+		<h2>Kontak Hobby<span>Mate</span></h2>
+		<p>Jika ada saran, kritik, dan keluhan silahkan kontak kami😎</p>
+		<div class="contact-menu">
+		  <ul>
+			<li><a href="#">Email</a></li>
+			<li><a href="#">Telepon</a></li>
+			<li><a href="#">Alamat</a></li>
+			<li><a href="facebook.com" target="_blank">Facebook</a></li>
+			<li><a href="instagram.com" target="_blank">Instagram</a></li>
+			<li><a href="twitter.com" target="_blank">Twitter</a></li>
+		  </ul>
+		</div>
+	</div>
+
+	<form action="#" method="post">
+		<label for="name">Name</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email</label>
+		<input type="text" id="email" name="email" required>
+
+		<label for="message">Pesan</label>
+		<textarea id="message" name="message" rows="5" required></textarea>
+
+		<input type="submit" value="Kirim">
+	</form>
+
+	<!--footer-->
+	<footer class="footer-main footer-main-flex">
+		<p> <span class="designed">Hobby<span>Mate</span> &copy; 2023. All rights reserved.
+		</p>
+	</footer>
+
+	<!-- login -->
+	<script>
+		const loginBtn = document.getElementById('login-btn'); 
+	loginBtn.addEventListener('click', () => {
+	  window.location.href = './daftar/login.html';
+	});
+</body>
+</html>

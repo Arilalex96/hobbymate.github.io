@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kategori</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/kategori.css">
+</head>
+<body>
+	<div class="menu-bar">
+		<h1 class="logo">Hobby<span>Mate</span></h1>
+		<ul>
+		  <li><a href="../index.html">Beranda</a></li>
+		  <li><a href="./kategori.html">Kategori <i class="fas fa-caret-down"></i></a>
+			  <div class="dropdown-menu">
+				  <ul>
+					<li>
+					  <a href="buttom.html">Olahraga <i class="fas fa-caret-right"></i></a>
+					  <div class="dropdown-menu-1">
+						<ul>
+						  <li><a href="buttom.html">Bulutangkis</a></li>
+						  <li><a href="buttom.html">Basket</a></li>
+						  <li><a href="buttom.html">Futsal</a></li>
+						  <li><a href="buttom.html">Volly</a></li>
+						  <li><a href="buttom.html">Bersepeda</a></li>
+						</ul>
+					  </div>
+					</li>
+					<li>
+					  <a href="buttom.html">Kesenian <i class="fas fa-caret-right"></i></a>
+					  <div class="dropdown-menu-2">
+						<ul>
+						  <li><a href="buttom.html">Menyanyi</a></li>
+						  <li><a href="buttom.html">Dance</a></li>
+						  <li><a href="buttom.html">Teater</a></li>
+						</ul>
+					  </div>
+					</li>
+				  </ul>
+			  </div>
+		  </li>
+		  <li><a href="tentang.html">Tentang</a>
+		  </li>
+		  <li><a href="Contact.html">Kontak Kami</a></li>
+		  <li><a href="profil.html">Profil</a></li>
+		  <li><i class="fas fa-user" id="login-btn"></i>
+		  </li>
+		  </div>
+		</ul>
+	  </div>
+  
+	  <div class="hero">
+		&nbsp;
+	  </div>
+  
+
+	<main>
+		<h2>Upload Kegiatan</h2>
+		<form action="#" method="post">
+			<label for="nama">Nama Kegiatan:</label>
+			<input type="text" id="nama" name="nama" required>
+
+			<label for="jenis_kegiatan">Jenis Kegiatan:</label>
+			<select id="jenis_kegiatan" name="jenis_kegiatan" required>
+				<option value="">Pilih Jenis Kegiatan</option>
+				<option value="Sepak Bola">Sepak Bola</option>
+				<option value="Futsal">Futsal</option>
+				<option value="Volly">Volly</option>
+				<option value="Basket">Basket</option>
+				<option value="Bulu tangkis">Bulu tangkis</option>
+				<option value="Bersepeda">Bersepeda</option>
+                <option value="Menyanyi">Menyanyi</option>
+                <option value="Dance">Dance</option>
+                <option value="Teater">Teater</option>
+			</select>
+
+			<label for="waktu">Waktu:</label>
+			<input type="datetime-local" id="waktu" name="waktu" required>
+
+			<label for="tempat">Tempat:</label>
+			<input type="text" id="tempat" name="tempat" required>
+
+			<label for="jumlah_orang">Jumlah Orang:</label>
+			<input type="number" id="jumlah_orang" name="jumlah_orang" required>
+
+            <label for="description">Deskripsi Kegiatan</label>
+            <textarea id="description" name="description"></textarea>
+
+			<div class="container">
+				<button>Submit</button>
+			</div>
+		</form>
+
+        <li><a href="aktifitas.html">Aktifitas Terbaru</a></li>
+
+	</main>
+
+	<!--footer-->
+	<footer class="footer-main footer-main-flex">
+		<p> <span class="designed">Hobby<span>Mate</span> &copy; 2023. All rights reserved.
+		</p>
+	</footer>
+
+	<!-- login -->
+	<script>
+		const loginBtn = document.getElementById('login-btn'); 
+	loginBtn.addEventListener('click', () => {
+	  window.location.href = './daftar/login.html'; /
+	});
+</body>
+</html>
