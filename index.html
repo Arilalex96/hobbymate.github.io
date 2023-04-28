@@ -14,7 +14,7 @@
   <body>
     <nav>
     <div class="menu-bar">
-	<a href="#" class="tombol-menu">
+	<a href="#" class="tombol-menu" onclick="displayMenubar()" >
         <span class="garis"></span>
         <span class="garis"></span>
         <span class="garis"></span>
@@ -29,11 +29,11 @@
                     <a href="./html/buttom.html">Olahraga <i class="fas fa-caret-right"></i></a>
                     <div class="dropdown-menu-1">
                       <ul>
-                        <li><a href="">Bulutangkis</a></li>
-                        <li><a href="">Basket</a></li>
-                        <li><a href="">Futsal</a></li>
-						            <li><a href="">Volly</a></li>
-                        <li><a href="">Bersepeda</a></li>
+                        <li><a href="./html/buttom.html">Bulutangkis</a></li>
+                        <li><a href="./html/buttom.html">Basket</a></li>
+                        <li><a href="./html/buttom.html">Futsal</a></li>
+			<li><a href="./html/buttom.html">Volly</a></li>
+                        <li><a href="./html/buttom.html">Bersepeda</a></li>
                       </ul>
                     </div>
                   </li>
@@ -41,9 +41,9 @@
                     <a href="">Kesenian <i class="fas fa-caret-right"></i></a>
                     <div class="dropdown-menu-2">
                       <ul>
-                        <li><a href="">Menyanyi</a></li>
-                        <li><a href="">Dance</a></li>
-                        <li><a href="">Teater</a></li>
+                        <li><a href="./html/buttom.html">Menyanyi</a></li>
+                        <li><a href="./html/buttom.html">Dance</a></li>
+                        <li><a href="./html/buttom.html">Teater</a></li>
                       </ul>
                     </div>
                   </li>
@@ -208,6 +208,14 @@
 loginBtn.addEventListener('click', () => {
   window.location.href = './daftar/login.html'; 
 });
+	  function displayMenubar() {
+  var x = document.getElementById("showMenubar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
   </script>
   
   <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
