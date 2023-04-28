@@ -3,7 +3,21 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 	<title>Upload Kegiatan</title>
-
+	<script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('.dropdown-menu-1 a');
+        const titel = document.getElementById('titel');
+    
+        links.forEach(link => {
+            link.addEventListener('click', event => {
+            event.preventDefault(); // Prevent the default link behavior
+            const name = link.textContent; // Get the text content of the clicked link
+            titel.textContent = name; // Update the text content of the <p> element
+            console.log('Hello world!'); // Log a message to the console
+            });
+        });
+        });
+    </script>
 </head>
 <body>
     <style>
@@ -143,51 +157,56 @@
             background-color: #add8e6;
         }
         .container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-items: center;
-			gap: 70px;
-			margin: 100px;
-		}
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		gap: 70px;
+		margin: 100px;
+	}
 
-
-		.box {
-			border: 2px solid #FF8400;
-			padding: 30px;
-			width: 400px;
-			text-align: center;
-		}
+	.box {
+		border: 2px solid #FF8400;
+		padding: 30px;
+		width: 400px;
+		text-align: center;
+	}
 
         .box h3 {
             padding: 10px;
             color: #FF8400;
         }
 
-		button {
-			font-family: Arial, sans-serif;
-			font-size: 16px;
-			text-transform: uppercase;
-			border: none;
-			border-radius: 5px;
-			padding: 10px 20px;
-			color: #000000;
-			background-color: #FFD93D;
-			box-shadow: 0 5px #FF8400;
-			cursor: pointer;
-			transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-			margin-top: 30px;
-		}
+	button {
+		font-family: Arial, sans-serif;
+		font-size: 16px;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 5px;
+		padding: 10px 20px;
+		color: #000000;
+		background-color: #FFD93D;
+		box-shadow: 0 5px #FF8400;
+		cursor: pointer;
+		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+		margin-top: 30px;
+	}
 
-		button:hover {
-			background-color: #FF8400;
-			box-shadow: 0 3px #FF8400;
-		}
+	button:hover {
+		background-color: #FF8400;
+		box-shadow: 0 3px #FF8400;
+	}
 
-		button:active {
-			background-color: #FF8400;
-			box-shadow: 0 1px #FF8400;
-		}
+	button:active {
+		background-color: #FF8400;
+		box-shadow: 0 1px #FF8400;
+	}
+	    
+	    #titel {
+            	text-align: center; 
+            	color: #FF8400; 
+            	font-size: 30px;
+          }
 
     </style>
     <div class="menu-bar">
@@ -211,7 +230,7 @@
                     </li>
                     <li>
                       <a href="./buttom.html">Kesenian <i class="fas fa-caret-right"></i></a>
-                      <div class="dropdown-menu-2">
+                      <div class="dropdown-menu-1">
                         <ul>
                           <li><a href="buttom.html">Menyanyi</a></li>
                           <li><a href="buttom.html">Dance</a></li>
@@ -237,6 +256,7 @@
       </div>
 <main>
       <div class="container">
+	      <h2 id="titel"></h2>
 		<div class="box">
 			<h3>Upload Kegiatan</h3>
 			<p>Bergabunglah dengan seluruh teman sehobi kamu. Upload kegiatan dan ajak orang lain untuk berolahraga atau gabung dengan kesenian kamu. Upload kegiatan kamu sekarang.</p>
