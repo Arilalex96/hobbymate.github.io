@@ -25,4 +25,4 @@ $(window).resize(function(){
       menu.css("display","none");
    }
    klikMenu();
-});   
+});
