@@ -9,6 +9,25 @@ body {
 	background-color: #add8e6;
 }
 
+.myLinks {
+	display: none;
+	overflow: hidden;
+  	background-color: #333;
+  	position: relative;
+	color: white;
+  	padding: 14px 16px;
+ 	text-decoration: none;
+  	font-size: 17px;
+}
+
+.myLinks a {
+ 	color: white;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+  	display: block;
+}
+
 .logo span {
 	color: #FF8400;
 }
@@ -332,5 +351,122 @@ img {
 
 iframe {
 	max-width: 50%;
+}
+
+/* menubar mobile */
+.menu-bar2 h1 {
+	flex: 1px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.menu-bar2 h1 span {
+	color: #FF8400;
+}
+
+.menu-bar2 {
+	display: none;
+	background-color: #FFD93D;
+	height: max-content;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	position:relative;
+}
+
+.menu-bar2 ul {
+	list-style: none;
+
+}
+
+.menu-bar2 ul li {
+
+	padding: 10px 30px;
+	position: relative;
+}
+
+.menu-bar2 ul li a {
+
+	font-size: 20px;
+	color: #000000;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.menu-bar2 ul li a:active {
+	color: #fff;
+}
+
+.menu-bar2 ul li a:hover {
+	color: #fff;
+}
+
+.fas {
+	padding-top: 1px;
+}
+
+.menu-bar2 i{
+	font-size: 20px;
+	color: #000000;
+	margin-right: 10px;
+}
+
+.menu-bar2 i:hover{
+	color: #fff;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+        z-index: 100;
+	border-radius: 5px;
+}
+
+.menu-bar2 ul li:hover .dropdown-menu {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: #FFD93D;
+}
+
+.menu-bar2 ul li:hover .dropdown-menu ul {
+	display: block;
+	margin: 10px;
+}
+
+.menu-bar2 ul li:hover .dropdown-menu ul li {
+	width: 150px;
+	padding: 10px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: .1rem solid #fff;
+}
+
+.dropdown-menu-1 {
+	display: none;
+	border-radius: 5px;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 0;
+	background-color: #FFD93D;
+}
+
+.dropdown-menu-2 {
+	display: none;
+	border-radius: 5px;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-2 {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 0;
+	background-color: #FFD93D;
 }
 
