@@ -1,0 +1,528 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	background-color: #add8e6;
+}
+
+.myLinks {
+	display: none;
+	overflow: hidden;
+  	background-color: #333;
+  	position: relative;
+	color: white;
+  	padding: 14px 16px;
+ 	text-decoration: none;
+  	font-size: 17px;
+}
+
+.myLinks a {
+ 	color: white;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+  	display: block;
+}
+
+.logo span {
+	color: #FF8400;
+}
+
+
+.menu-bar h1 {
+	flex: 1px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.menu-bar h1 span {
+	color: #FF8400;
+}
+
+.menu-bar {
+	background-color: #FFD93D;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	position: relative;
+}
+
+.menu-bar ul {
+	list-style: none;
+	display: flex;
+}
+
+.menu-bar ul li {
+	padding: 10px 30px;
+	position: relative;
+}
+
+.menu-bar ul li a {
+	font-size: 20px;
+	color: #000000;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.menu-bar ul li a:active {
+	color: #fff;
+}
+
+.menu-bar ul li a:hover {
+	color: #fff;
+}
+
+.fas {
+	padding-top: 1px;
+}
+
+.menu-bar i{
+	font-size: 20px;
+	color: #000000;
+	margin-right: 10px;
+}
+
+.menu-bar i:hover{
+	color: #fff;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+        z-index: 100;
+	border-radius: 5px;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: #FFD93D;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+	display: block;
+	margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+	width: 150px;
+	padding: 10px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: .1rem solid #fff;
+}
+
+.dropdown-menu-1 {
+	display: none;
+	border-radius: 5px;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 0;
+	background-color: #FFD93D;
+}
+
+.dropdown-menu-2 {
+	display: none;
+	border-radius: 5px;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-2 {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 0;
+	background-color: #FFD93D;
+}
+
+header {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 20px;
+	padding-bottom: 50px;
+} 
+
+.tombol-menu{
+	position: absolute;
+	top: 1.3rem;
+	right: 1rem;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 20px;
+
+}
+.tombol-menu .garis {
+	height: 3px;
+	background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+	.menu-bar {
+	  display: block;
+	  height: auto;
+	  padding: 15px;
+	}
+	.menu-bar ul {
+		display: none;
+		margin-top: 60px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	.menu-bar h1 {
+	  font-size: 24px;
+	}
+	.tombol-menu {
+		display: flex;
+	}
+	.menu-bar .fas {
+		padding: 1px;
+	}
+	
+	.menu-bar ul li {
+	  padding: 10px 0;
+	  position: relative;
+	  display: none;
+	}
+	.menu-bar ul li a {
+	  font-size: 18px;
+	}
+	.menu-bar ul li:hover .dropdown-menu {
+	  display: block;
+	  position: static;
+	  background-color: #FFD93D;
+	}
+	.dropdown-menu {
+	  display: none;
+	}
+	.dropdown-menu-1,
+	.dropdown-menu-2 {
+	  display: none;
+	}
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+	.menu-bar {
+		display: block;
+	}
+  }
+/* slideshow */
+* {
+    box-sizing: border-box
+}
+body {
+    font-family: Verdana, sans-serif; margin:0
+}
+.mySlides {
+    display: none
+}
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+  max-width: 55%;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #FF8400;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.slide-animation-1 {
+	animation-name: slide-in-from-left;
+	animation-duration: 1s;
+  }
+  
+  @keyframes slide-in-from-left {
+	from {transform: translateX(-100%);}
+	to {transform: translateX(0);}
+  }
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+.dot{
+ height: 10px;
+  width: 10px;
+}
+}
+@media only screen and (max-width: 500px) {
+  .prev, .next,.text {font-size: 14px}
+}
+
+/* Blog youtube */
+.video-container {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.video-card {
+	flex: 0 0 auto;
+	margin-right: 10px;
+	vertical-align: top; 
+	text-align: center;
+}
+
+.video-card h3 {
+	font-size: 20px;
+	margin: 0 0 10px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+}
+
+iframe {
+	max-width: 50%;
+}
+
+/* menubar mobile */
+.menu-bar2 h1 {
+	flex: 1px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.menu-bar2 h1 span {
+	color: #FF8400;
+}
+
+.menu-bar2 {
+	display: none;
+	background-color: #FFD93D;
+	height: max-content;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	position:relative;
+}
+
+.menu-bar2 ul {
+	list-style: none;
+
+}
+
+.menu-bar2 ul li {
+
+	padding: 10px 30px;
+	position: relative;
+}
+
+.menu-bar2 ul li a {
+
+	font-size: 20px;
+	color: #000000;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+
+.menu-bar2 ul li a:active {
+	color: #fff;
+}
+
+.menu-bar2 ul li a:hover {
+	color: #fff;
+}
+
+.fas {
+	padding-top: 1px;
+}
+
+.menu-bar2 i{
+	font-size: 20px;
+	color: #000000;
+	margin-right: 10px;
+}
+
+.menu-bar2 i:hover{
+	color: #fff;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+        z-index: 100;
+	border-radius: 5px;
+}
+
+.menu-bar2 ul li:hover .dropdown-menu {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	background-color: #FFD93D;
+}
+
+.menu-bar2 ul li:hover .dropdown-menu ul {
+	display: block;
+	margin: 10px;
+}
+
+.menu-bar2 ul li:hover .dropdown-menu ul li {
+	width: 150px;
+	padding: 10px;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: .1rem solid #fff;
+}
+
+.dropdown-menu-1 {
+	display: none;
+	border-radius: 5px;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 0;
+	background-color: #FFD93D;
+}
+
+.dropdown-menu-2 {
+	display: none;
+	border-radius: 5px;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-2 {
+	display: block;
+	position: absolute;
+	left: 150px;
+	top: 0;
+	background-color: #FFD93D;
+}
+
+/* Style untuk elemen article */
+article {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 20px;
+  }
+  
+  /* Style untuk judul posting */
+  article h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  /* Style untuk cover image */
+  article img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+  }
+  
+  /* Style untuk konten posting */
+  article p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+  }
+  
+  /* Style untuk tanggal posting */
+  article small {
+	font-size: 12px;
+	display: block;
+	margin-top: 10px;
+  }
+  
+  /* Style untuk tampilan responsif pada layar kecil */
+  @media screen and (max-width: 768px) {
+	article {
+	  padding: 10px;
+	}
+	
+	article h2 {
+	  font-size: 20px;
+	  margin-bottom: 5px;
+	}
+  
+	article p {
+	  font-size: 14px;
+	}
+  
+	article small {
+	  font-size: 10px;
+	}
+  }

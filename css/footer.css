@@ -1,0 +1,29 @@
+footer {
+  background-color: rgb(29, 29, 29);
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #000;
+}
+
+
+  .copyright p {
+    color: #fff;
+ }
+
+.designed {
+	color: #fff;
+}
+
+.designed span {
+    color: #FF8400;
+}
