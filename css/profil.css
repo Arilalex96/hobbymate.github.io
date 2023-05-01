@@ -196,6 +196,13 @@ h1 {
   color: #ffffff;
 }
 
+h3 {
+    text-align: center;
+    margin: 0;
+    height: 0;
+    justify-content: center;
+}
+
 /*/Mengatur responsif/*/
 .tombol-menu{
 position: absolute;
